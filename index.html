@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Management Tool</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+  />
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="#" class="navbar-brand">Home</a>
+            <ul class="navbar-menu">
+                <li><a href="#budget-section">Add Budget</a></li>
+                <li><a href="#expense-section">Add Expense</a></li>
+                <li><a href="file:///D:/BBMS/PBMT2.0/Expense%20history.html">Expense History</a></li>
+            </ul>
+        </div>
+    </nav>
+    <h1>Budget Management Tool</h1>
+    <div class="main">
+        
+        <div class="container">
+            <div class="sub-container">
+              <!-- Budget -->
+              <div class="total-amount-container">
+                <h3>Budget</h3>
+                <p class="hide error" id="budget-error">
+                  Value cannot be empty or negative
+                </p>
+                <input
+                  type="number"
+                  id="total-amount"
+                  placeholder="Enter Total Amount"
+                />
+                <button class="submit" id="total-amount-button">Set Budget</button>
+              </div>
+    
+              <!-- Expenditure -->
+              <div class="user-amount-container">
+                <h3>Expenses</h3>
+                <p class="hide error" id="product-title-error">
+                  Values cannot be empty
+                </p>
+                <input
+                  type="text"
+                  class="product-title"
+                  id="product-title"
+                  placeholder="Enter Title of Product"
+                />
+                <input
+                  type="number"
+                  id="user-amount"
+                  placeholder="Enter Cost of Product"
+                />
+                <button class="submit" id="check-amount">Check Amount</button>
+              </div>
+            </div>
+            <!-- Output -->
+            <div class="output-container flex-space">
+              <div>
+                <p>Total Budget</p>
+                <span id="amount">0</span>
+              </div>
+              <div>
+                <p>Expenses</p>
+                <span id="expenditure-value">0</span>
+              </div>
+              <div>
+                <p>Balance</p>
+                <span id="balance-amount">0</span>
+              </div>
+            </div>
+          </div>
+          <!-- List -->
+          <div class="list">
+            <h3>Expense List</h3>
+            <div class="list-container" id="list"></div>
+          </div>
+        </div>
+    </div>
+    <!--footer-->
+    <div class="footer">
+  <div class="container_footer">
+    <footer class="text-center text-white" style="background-color: #3f51b5">
+      <div class="container">
+        <section class="mt-5">
+          <div class="row text-center d-flex justify-content-center pt-5">
+            <div class="col-md-2">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="file:///D:/BBMS/PBMT2.0/About%20us.html" class="text-white">About us</a>
+              </h6>
+            </div>
+            <div class="col-md-2">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="#!" class="text-white">Products</a>
+              </h6>
+            </div>
+            <div class="col-md-2">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="#!" class="text-white">Awards</a>
+              </h6>
+            </div>
+            <div class="col-md-2">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="#!" class="text-white">Help</a>
+              </h6>
+            </div>
+            <div class="col-md-2">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="file:///D:/BBMS/PBMT2.0/contact%20us.html" class="text-white">Contact</a>
+              </h6>
+            </div>
+          
+          </div>
+         
+        </section>
+       
+  
+        <hr class="my-5" />
+  
+        
+        <section class="mb-5">
+          <div class="row d-flex justify-content-center">
+            <div class="col-lg-8">
+              <p>
+                Footer is on pending please wait for 10 years......
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="text-center_mb-5">
+          <a href="" class="text-white me-4">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-google"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-github"></i>
+          </a>
+        </section>
+     
+      </div>
+     
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+  </div>
+  <!-- End of .container -->
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
